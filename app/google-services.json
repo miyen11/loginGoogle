@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "127178233076",
+    "project_id": "firebase-clipco"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127178233076:android:2979183cee7fab8b",
+        "android_client_info": {
+          "package_name": "com.cvamedios.clipco_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127178233076-315ndvop8rvrtnobbbvg5l5pel0ei69s.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "127178233076-rcv23p19kt7uucne69908l001q43b17q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cvamedios.clipco_login",
+            "certificate_hash": "94e685d3b86ef29946a41b7ea4fa0a10f177baba"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf9okqAoOhGV_iReph9s2_PdvMf1jncB8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
