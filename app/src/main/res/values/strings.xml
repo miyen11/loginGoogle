@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ClipCO_LOGIN</string>
+    <string name="facebook_app_id">505519039839981</string>
+    <string name="fb_login_protocol_scheme">fb505519039839981</string>
 </resources>

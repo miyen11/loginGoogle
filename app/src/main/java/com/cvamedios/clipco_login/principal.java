@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.facebook.AccessToken;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -35,14 +36,18 @@ public class principal extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
+        if (AccessToken.getCurrentAccessToken() == null){
+            goLoginInScream();
+        }
+
         nameUser = (TextView) findViewById(R.id.nameUser);
         emailUsuer = (TextView)findViewById(R.id.textViewEmail);
         imageUser = (ImageView)findViewById(R.id.imageViewuser) ;
-
         loginOUT = (Button)findViewById(R.id.buttonCerrarSesion);
         revoke = (Button)findViewById(R.id.buttonRevoke);
         loginOUT.setOnClickListener(this);
         revoke.setOnClickListener(this);
+
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail().build();
